@@ -1,0 +1,13 @@
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\bin\Release\WindowsForms_NET_Framework_4.5.1.exe.config
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\bin\Release\WindowsForms_NET_Framework_4.5.1.exe
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\bin\Release\WindowsForms_NET_Framework_4.5.1.pdb
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\bin\Release\SimWinGamePad.dll
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\WindowsForms_NET_Framework_4.5.1.csproj.AssemblyReference.cache
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\WindowsForms_NET_Framework_4.5.1.csproj.SuggestedBindingRedirects.cache
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\JoyStick_000.Form1.resources
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\WindowsForms_NET_Framework_4._5._1.Properties.Resources.resources
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\WindowsForms_NET_Framework_4.5.1.csproj.GenerateResource.cache
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\WindowsForms_NET_Framework_4.5.1.csproj.CoreCompileInputs.cache
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\WindowsForms_NET_Framework_4.5.1.csproj.CopyComplete
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\WindowsForms_NET_Framework_4.5.1.exe
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Release\WindowsForms_NET_Framework_4.5.1.pdb
