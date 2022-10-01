@@ -11,3 +11,4 @@ F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_
 F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\bin\Debug\SimWinGamePad.dll
 F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Debug\WindowsForms_NET_Framework_4.5.1.csproj.CopyComplete
 F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Debug\JoyStick_000.Form1.resources
+F:\Program Projects\WindowsForms_NET_Framework_4.5.1\WindowsForms_NET_Framework_4.5.1\obj\Debug\JoyStick_000.Form2.resources

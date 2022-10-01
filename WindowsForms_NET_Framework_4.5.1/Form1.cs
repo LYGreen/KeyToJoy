@@ -206,7 +206,9 @@ namespace JoyStick_000
         }
 
 
-        //Controls
+        //Override
+
+        //Controls KeyDown
         protected override bool ProcessDialogKey(Keys keyData)
         {
             switch(keyData)
@@ -218,6 +220,8 @@ namespace JoyStick_000
             }
             return base.ProcessDialogKey(keyData);
         }
+
+        //Key Down
 
         private void ButLeftStickTrigger_KeyDown(object sender, KeyEventArgs e)
         {
@@ -517,7 +521,590 @@ namespace JoyStick_000
                 ButMenuGuide.Text = Convert.ToString(Controllers[index].Guide);
             }
         }
-        //
 
+        //Mouse Right Click
+
+        /*
+            ComboMouse.Items.Add("Left");//1
+            ComboMouse.Items.Add("Right");//2
+            ComboMouse.Items.Add("Middle");//3
+            ComboMouse.Items.Add("XButton1");//4
+            ComboMouse.Items.Add("XButton2");//5
+        */
+
+        private void ButLeftStickTrigger_MouseDown(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if(form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch(form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left":key = Keys.LButton; break;
+                        case "Right":key = Keys.RButton; break;
+                        case "Middle":key = Keys.MButton; break;
+                        case "XButton1":key = Keys.XButton1; break;
+                        case "XButton2":key = Keys.XButton2; break;
+                    }
+                    Controllers[index].LeftTrigger = key;
+                    ButLeftStickTrigger.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButLeftStickUp_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].LeftStick_Up = key;
+                    ButLeftStickUp.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButLeftStickShoulder_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].LeftShoulder = key;
+                    ButLeftStickShoulder.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButLeftStickLeft_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].LeftStick_Left = key;
+                    ButLeftStickLeft.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButLeftStickClick_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].LeftStick_Click = key;
+                    ButLeftStickClick.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButLeftStickRight_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].LeftStick_Right = key;
+                    ButLeftStickRight.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButLeftStickDown_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].LeftStick_Down = key;
+                    ButLeftStickDown.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButDPadUp_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].DPad_Up = key;
+                    ButDPadUp.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButDPadLeft_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].DPad_Left = key;
+                    ButDPadLeft.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButDPadRight_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].DPad_Right = key;
+                    ButDPadRight.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButDPadDown_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].DPad_Down = key;
+                    ButDPadDown.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButRightStickTrigger_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].RightTrigger = key;
+                    ButRightStickTrigger.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButRightStickUp_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].RightStick_Up = key;
+                    ButRightStickUp.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButRightStickShoulder_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].RightShoulder = key;
+                    ButRightStickShoulder.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButRightStickLeft_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].RightStick_Left = key;
+                    ButRightStickLeft.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButRightStickClick_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].RightStick_Click = key;
+                    ButRightStickClick.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButRightStickRight_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].RightStick_Right = key;
+                    ButRightStickRight.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButRightStickDown_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].RightStick_Down = key;
+                    ButRightStickDown.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButABXYY_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].Y = key;
+                    ButABXYY.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButABXYX_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].X = key;
+                    ButABXYX.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButABXYA_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].A = key;
+                    ButABXYA.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButABXYB_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].B = key;
+                    ButABXYB.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButMenuStart_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].Start = key;
+                    ButMenuStart.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButMenuBack_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].Back = key;
+                    ButMenuBack.Text = Convert.ToString(key);
+                }
+            }
+        }
+
+        private void ButMenuGuide_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Form2 form2 = new Form2();
+                if (form2.ShowDialog() == DialogResult.OK)
+                {
+                    int index = ComboControllerNumber.SelectedIndex;
+                    Keys key = new Keys();
+                    switch (form2.ComboMouse.SelectedItem)
+                    {
+                        case "Left": key = Keys.LButton; break;
+                        case "Right": key = Keys.RButton; break;
+                        case "Middle": key = Keys.MButton; break;
+                        case "XButton1": key = Keys.XButton1; break;
+                        case "XButton2": key = Keys.XButton2; break;
+                    }
+                    Controllers[index].Guide = key;
+                    ButMenuGuide.Text = Convert.ToString(key);
+                }
+            }
+        }
     }
 }

@@ -20,10 +20,11 @@ namespace JoyStick_000
             }
             base.Dispose(disposing);
             thread_Keystate_Exit = true;
-            while (thread_KeyState.IsAlive)
-            {
-                Thread.Sleep(1);
-            }
+            //Craft
+            //while (thread_KeyState.IsAlive)
+            //{
+            //    Thread.Sleep(1);
+            //}
             SimWinInput.SimGamePad.Instance.ShutDown();
         }
 
@@ -210,6 +211,7 @@ namespace JoyStick_000
             this.ButLeftStickUp.Text = "None";
             this.ButLeftStickUp.UseVisualStyleBackColor = true;
             this.ButLeftStickUp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButLeftStickUp_KeyDown);
+            this.ButLeftStickUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButLeftStickUp_MouseDown);
             // 
             // LabLeftStickUp
             // 
@@ -230,6 +232,7 @@ namespace JoyStick_000
             this.ButLeftStickClick.Text = "None";
             this.ButLeftStickClick.UseVisualStyleBackColor = true;
             this.ButLeftStickClick.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButLeftStickClick_KeyDown);
+            this.ButLeftStickClick.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButLeftStickClick_MouseDown);
             // 
             // ButLeftStickDown
             // 
@@ -241,6 +244,7 @@ namespace JoyStick_000
             this.ButLeftStickDown.Text = "None";
             this.ButLeftStickDown.UseVisualStyleBackColor = true;
             this.ButLeftStickDown.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButLeftStickDown_KeyDown);
+            this.ButLeftStickDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButLeftStickDown_MouseDown);
             // 
             // ButLeftStickRight
             // 
@@ -252,6 +256,7 @@ namespace JoyStick_000
             this.ButLeftStickRight.Text = "None";
             this.ButLeftStickRight.UseVisualStyleBackColor = true;
             this.ButLeftStickRight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButLeftStickRight_KeyDown);
+            this.ButLeftStickRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButLeftStickRight_MouseDown);
             // 
             // ButLeftStickTrigger
             // 
@@ -263,6 +268,7 @@ namespace JoyStick_000
             this.ButLeftStickTrigger.Text = "None";
             this.ButLeftStickTrigger.UseVisualStyleBackColor = true;
             this.ButLeftStickTrigger.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButLeftStickTrigger_KeyDown);
+            this.ButLeftStickTrigger.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButLeftStickTrigger_MouseDown);
             // 
             // ButLeftStickShoulder
             // 
@@ -274,6 +280,7 @@ namespace JoyStick_000
             this.ButLeftStickShoulder.Text = "None";
             this.ButLeftStickShoulder.UseVisualStyleBackColor = true;
             this.ButLeftStickShoulder.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButLeftStickShoulder_KeyDown);
+            this.ButLeftStickShoulder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButLeftStickShoulder_MouseDown);
             // 
             // ButLeftStickLeft
             // 
@@ -285,6 +292,7 @@ namespace JoyStick_000
             this.ButLeftStickLeft.Text = "None";
             this.ButLeftStickLeft.UseVisualStyleBackColor = true;
             this.ButLeftStickLeft.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButLeftStickLeft_KeyDown);
+            this.ButLeftStickLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButLeftStickLeft_MouseDown);
             // 
             // LabLeftStick
             // 
@@ -422,6 +430,7 @@ namespace JoyStick_000
             this.ButRightStickLeft.Text = "None";
             this.ButRightStickLeft.UseVisualStyleBackColor = true;
             this.ButRightStickLeft.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButRightStickLeft_KeyDown);
+            this.ButRightStickLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButRightStickLeft_MouseDown);
             // 
             // ButRightStickShoulder
             // 
@@ -433,6 +442,7 @@ namespace JoyStick_000
             this.ButRightStickShoulder.Text = "None";
             this.ButRightStickShoulder.UseVisualStyleBackColor = true;
             this.ButRightStickShoulder.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButRightStickShoulder_KeyDown);
+            this.ButRightStickShoulder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButRightStickShoulder_MouseDown);
             // 
             // ButRightStickTrigger
             // 
@@ -444,6 +454,7 @@ namespace JoyStick_000
             this.ButRightStickTrigger.Text = "None";
             this.ButRightStickTrigger.UseVisualStyleBackColor = true;
             this.ButRightStickTrigger.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButRightStickTrigger_KeyDown);
+            this.ButRightStickTrigger.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButRightStickTrigger_MouseDown);
             // 
             // ButRightStickRight
             // 
@@ -455,6 +466,7 @@ namespace JoyStick_000
             this.ButRightStickRight.Text = "None";
             this.ButRightStickRight.UseVisualStyleBackColor = true;
             this.ButRightStickRight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButRightStickRight_KeyDown);
+            this.ButRightStickRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButRightStickRight_MouseDown);
             // 
             // ButRightStickDown
             // 
@@ -466,6 +478,7 @@ namespace JoyStick_000
             this.ButRightStickDown.Text = "Down";
             this.ButRightStickDown.UseVisualStyleBackColor = true;
             this.ButRightStickDown.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButRightStickDown_KeyDown);
+            this.ButRightStickDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButRightStickDown_MouseDown);
             // 
             // ButRightStickClick
             // 
@@ -477,6 +490,7 @@ namespace JoyStick_000
             this.ButRightStickClick.Text = "None";
             this.ButRightStickClick.UseVisualStyleBackColor = true;
             this.ButRightStickClick.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButRightStickClick_KeyDown);
+            this.ButRightStickClick.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButRightStickClick_MouseDown);
             // 
             // LabRightStickUp
             // 
@@ -497,6 +511,7 @@ namespace JoyStick_000
             this.ButRightStickUp.Text = "None";
             this.ButRightStickUp.UseVisualStyleBackColor = true;
             this.ButRightStickUp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButRightStickUp_KeyDown);
+            this.ButRightStickUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButRightStickUp_MouseDown);
             // 
             // LabFormOpacity
             // 
@@ -517,6 +532,7 @@ namespace JoyStick_000
             this.ButDPadUp.Text = "None";
             this.ButDPadUp.UseVisualStyleBackColor = true;
             this.ButDPadUp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButDPadUp_KeyDown);
+            this.ButDPadUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButDPadUp_MouseDown);
             // 
             // ButDPadLeft
             // 
@@ -528,6 +544,7 @@ namespace JoyStick_000
             this.ButDPadLeft.Text = "None";
             this.ButDPadLeft.UseVisualStyleBackColor = true;
             this.ButDPadLeft.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButDPadLeft_KeyDown);
+            this.ButDPadLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButDPadLeft_MouseDown);
             // 
             // ButDPadDown
             // 
@@ -539,6 +556,7 @@ namespace JoyStick_000
             this.ButDPadDown.Text = "None";
             this.ButDPadDown.UseVisualStyleBackColor = true;
             this.ButDPadDown.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButDPadDown_KeyDown);
+            this.ButDPadDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButDPadDown_MouseDown);
             // 
             // ButDPadRight
             // 
@@ -550,6 +568,7 @@ namespace JoyStick_000
             this.ButDPadRight.Text = "None";
             this.ButDPadRight.UseVisualStyleBackColor = true;
             this.ButDPadRight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButDPadRight_KeyDown);
+            this.ButDPadRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButDPadRight_MouseDown);
             // 
             // LabDPad
             // 
@@ -651,6 +670,7 @@ namespace JoyStick_000
             this.ButABXYA.Text = "None";
             this.ButABXYA.UseVisualStyleBackColor = true;
             this.ButABXYA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButABXYA_KeyDown);
+            this.ButABXYA.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButABXYA_MouseDown);
             // 
             // ButABXYB
             // 
@@ -662,6 +682,7 @@ namespace JoyStick_000
             this.ButABXYB.Text = "None";
             this.ButABXYB.UseVisualStyleBackColor = true;
             this.ButABXYB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButABXYB_KeyDown);
+            this.ButABXYB.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButABXYB_MouseDown);
             // 
             // ButABXYX
             // 
@@ -673,6 +694,7 @@ namespace JoyStick_000
             this.ButABXYX.Text = "None";
             this.ButABXYX.UseVisualStyleBackColor = true;
             this.ButABXYX.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButABXYX_KeyDown);
+            this.ButABXYX.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButABXYX_MouseDown);
             // 
             // ButABXYY
             // 
@@ -684,6 +706,7 @@ namespace JoyStick_000
             this.ButABXYY.Text = "None";
             this.ButABXYY.UseVisualStyleBackColor = true;
             this.ButABXYY.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButABXYY_KeyDown);
+            this.ButABXYY.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButABXYY_MouseDown);
             // 
             // LabMenu
             // 
@@ -704,6 +727,7 @@ namespace JoyStick_000
             this.ButMenuStart.Text = "None";
             this.ButMenuStart.UseVisualStyleBackColor = true;
             this.ButMenuStart.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButMenuStart_KeyDown);
+            this.ButMenuStart.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButMenuStart_MouseDown);
             // 
             // ButMenuBack
             // 
@@ -715,6 +739,7 @@ namespace JoyStick_000
             this.ButMenuBack.Text = "None";
             this.ButMenuBack.UseVisualStyleBackColor = true;
             this.ButMenuBack.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButMenuBack_KeyDown);
+            this.ButMenuBack.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButMenuBack_MouseDown);
             // 
             // ButMenuGuide
             // 
@@ -726,6 +751,7 @@ namespace JoyStick_000
             this.ButMenuGuide.Text = "None";
             this.ButMenuGuide.UseVisualStyleBackColor = true;
             this.ButMenuGuide.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ButMenuGuide_KeyDown);
+            this.ButMenuGuide.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButMenuGuide_MouseDown);
             // 
             // LabMenuStart
             // 
