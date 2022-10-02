@@ -129,22 +129,51 @@ namespace JoyStick_000
                 }
                 else
                 {
-                    if (MouseDir.Y < 0)
+                    //Mouse Control
+                    double scale = 0.0;
+                    if ((Math.Abs(MouseDir.Y) > Math.Abs(MouseDir.X)) && (MouseDir.Y != 0) && (MouseDir.X != 0)) 
                     {
-                        simState.LeftStickY = short.MaxValue;
+                        scale = Math.Abs(short.MaxValue / MouseDir.Y);
                     }
-                    else if (MouseDir.Y > 0)
+                    else if ((Math.Abs(MouseDir.Y) <= Math.Abs(MouseDir.X)) && (MouseDir.Y != 0) && (MouseDir.X != 0))
                     {
-                        simState.LeftStickY = -short.MaxValue;
+                        scale = Math.Abs( short.MaxValue / MouseDir.X);
                     }
-                    if (MouseDir.X < 0)
+                    else if(MouseDir.X != 0 || MouseDir.Y !=0)
                     {
-                        simState.LeftStickX = -short.MaxValue;
+                        if(MouseDir.X == 0)
+                        {
+                            scale = Math.Abs(short.MaxValue / MouseDir.Y);
+                        }
+                        else if(MouseDir.Y == 0)
+                        {
+                            scale = Math.Abs(short.MaxValue / MouseDir.X);
+                        }
                     }
-                    else if(MouseDir.X > 0)
+                    else
                     {
-                        simState.LeftStickX = short.MaxValue;
+                        scale = 0.0;
                     }
+                    simState.LeftStickX = (short)(MouseDir.X * scale);
+                    simState.LeftStickY = (short)(MouseDir.Y * (-scale));//Minus Beacuse of something
+
+                    //if (MouseDir.Y < 0)
+                    //{
+                    //    simState.LeftStickY = short.MaxValue;
+
+                    //}
+                    //else if (MouseDir.Y > 0)
+                    //{
+                    //    simState.LeftStickY = -short.MaxValue;
+                    //}
+                    //if (MouseDir.X < 0)
+                    //{
+                    //    simState.LeftStickX = -short.MaxValue;
+                    //}
+                    //else if(MouseDir.X > 0)
+                    //{
+                    //    simState.LeftStickX = short.MaxValue;
+                    //}
 
                 }
                 if (GetAsyncKeyState((Int32)Controllers[index].LeftStick_Click) != 0)
@@ -207,22 +236,50 @@ namespace JoyStick_000
                 }
                 else
                 {
-                    if (MouseDir.Y < 0)
+                    //Mouse Control
+                    double scale = 0.0;
+                    if ((Math.Abs(MouseDir.Y) > Math.Abs(MouseDir.X)) && (MouseDir.Y != 0) && (MouseDir.X != 0))
                     {
-                        simState.RightStickY = short.MaxValue;
+                        scale = Math.Abs(short.MaxValue / MouseDir.Y);
                     }
-                    else if (MouseDir.Y > 0)
+                    else if ((Math.Abs(MouseDir.Y) <= Math.Abs(MouseDir.X)) && (MouseDir.Y != 0) && (MouseDir.X != 0))
                     {
-                        simState.RightStickY = -short.MaxValue;
+                        scale = Math.Abs(short.MaxValue / MouseDir.X);
                     }
-                    if (MouseDir.X < 0)
+                    else if (MouseDir.X != 0 || MouseDir.Y != 0)
                     {
-                        simState.RightStickX = -short.MaxValue;
+                        if (MouseDir.X == 0)
+                        {
+                            scale = Math.Abs(short.MaxValue / MouseDir.Y);
+                        }
+                        else if (MouseDir.Y == 0)
+                        {
+                            scale = Math.Abs(short.MaxValue / MouseDir.X);
+                        }
                     }
-                    else if (MouseDir.X > 0)
+                    else
                     {
-                        simState.RightStickX = short.MaxValue;
+                        scale = 0.0;
                     }
+                    simState.RightStickX = (short)(MouseDir.X * scale);
+                    simState.RightStickY = (short)(MouseDir.Y * (-scale));//Minus Beacuse of something
+
+                    //if (MouseDir.Y < 0)
+                    //{
+                    //    simState.RightStickY = short.MaxValue;
+                    //}
+                    //else if (MouseDir.Y > 0)
+                    //{
+                    //    simState.RightStickY = -short.MaxValue;
+                    //}
+                    //if (MouseDir.X < 0)
+                    //{
+                    //    simState.RightStickX = -short.MaxValue;
+                    //}
+                    //else if (MouseDir.X > 0)
+                    //{
+                    //    simState.RightStickX = short.MaxValue;
+                    //}
                 }
                     if (GetAsyncKeyState((Int32)Controllers[index].RightStick_Click) != 0)
                     {

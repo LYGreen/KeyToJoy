@@ -428,6 +428,35 @@ namespace JoyStick_000
             }
         }
 
+        private void ButNameSave_Click(object sender, EventArgs e)
+        {
+            string name = "";
+            if(ComboLoad.SelectedItem != null)
+            {
+                name = ComboLoad.SelectedItem.ToString();
+            }
+            if (name != "")
+            {
+                int index = ComboControllerNumber.SelectedIndex;
+                string path = Application.StartupPath;
+                path = path + "\\" + name + ".dat";
+                FileStream fs = new FileStream(path, FileMode.Create);
+                BinaryFormatter bf = new BinaryFormatter();
+                bf.Serialize(fs, Controllers[index]);
+                fs.Close();
+                //Reload
+                string[] files = Directory.GetFiles(Application.StartupPath);
+                ComboLoad.Items.Clear();
+                for (int i = 0; i < files.Length; i++)
+                {
+                    if (Path.GetExtension(files[i]) == ".dat")
+                    {
+                        ComboLoad.Items.Add(Path.GetFileNameWithoutExtension(files[i]));
+                    }
+                }
+            }
+        }
+
         private void ButLoad_Click(object sender, EventArgs e)
         {
             if (ComboLoad.Text != "")
@@ -1106,5 +1135,7 @@ namespace JoyStick_000
                 }
             }
         }
+
+
     }
 }

@@ -110,6 +110,8 @@ namespace JoyStick_000
             this.TexName = new System.Windows.Forms.TextBox();
             this.LabRename = new System.Windows.Forms.Label();
             this.ButDelete = new System.Windows.Forms.Button();
+            this.ButNameSave = new System.Windows.Forms.Button();
+            this.LabSave = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.TbOpacity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,19 +193,19 @@ namespace JoyStick_000
             // 
             // TbOpacity
             // 
-            this.TbOpacity.Location = new System.Drawing.Point(334, 8);
+            this.TbOpacity.Location = new System.Drawing.Point(306, 8);
             this.TbOpacity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TbOpacity.Maximum = 100;
             this.TbOpacity.Minimum = 15;
             this.TbOpacity.Name = "TbOpacity";
-            this.TbOpacity.Size = new System.Drawing.Size(411, 45);
+            this.TbOpacity.Size = new System.Drawing.Size(430, 45);
             this.TbOpacity.TabIndex = 7;
             this.TbOpacity.Value = 100;
             this.TbOpacity.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // ButLeftStickUp
             // 
-            this.ButLeftStickUp.Location = new System.Drawing.Point(68, 111);
+            this.ButLeftStickUp.Location = new System.Drawing.Point(68, 156);
             this.ButLeftStickUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButLeftStickUp.Name = "ButLeftStickUp";
             this.ButLeftStickUp.Size = new System.Drawing.Size(50, 50);
@@ -216,7 +218,7 @@ namespace JoyStick_000
             // LabLeftStickUp
             // 
             this.LabLeftStickUp.AutoSize = true;
-            this.LabLeftStickUp.Location = new System.Drawing.Point(84, 97);
+            this.LabLeftStickUp.Location = new System.Drawing.Point(84, 142);
             this.LabLeftStickUp.Name = "LabLeftStickUp";
             this.LabLeftStickUp.Size = new System.Drawing.Size(17, 12);
             this.LabLeftStickUp.TabIndex = 9;
@@ -224,7 +226,7 @@ namespace JoyStick_000
             // 
             // ButLeftStickClick
             // 
-            this.ButLeftStickClick.Location = new System.Drawing.Point(68, 175);
+            this.ButLeftStickClick.Location = new System.Drawing.Point(68, 220);
             this.ButLeftStickClick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButLeftStickClick.Name = "ButLeftStickClick";
             this.ButLeftStickClick.Size = new System.Drawing.Size(50, 50);
@@ -236,7 +238,7 @@ namespace JoyStick_000
             // 
             // ButLeftStickDown
             // 
-            this.ButLeftStickDown.Location = new System.Drawing.Point(68, 238);
+            this.ButLeftStickDown.Location = new System.Drawing.Point(68, 283);
             this.ButLeftStickDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButLeftStickDown.Name = "ButLeftStickDown";
             this.ButLeftStickDown.Size = new System.Drawing.Size(50, 50);
@@ -248,7 +250,7 @@ namespace JoyStick_000
             // 
             // ButLeftStickRight
             // 
-            this.ButLeftStickRight.Location = new System.Drawing.Point(122, 175);
+            this.ButLeftStickRight.Location = new System.Drawing.Point(122, 220);
             this.ButLeftStickRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButLeftStickRight.Name = "ButLeftStickRight";
             this.ButLeftStickRight.Size = new System.Drawing.Size(50, 50);
@@ -260,7 +262,7 @@ namespace JoyStick_000
             // 
             // ButLeftStickTrigger
             // 
-            this.ButLeftStickTrigger.Location = new System.Drawing.Point(12, 111);
+            this.ButLeftStickTrigger.Location = new System.Drawing.Point(12, 156);
             this.ButLeftStickTrigger.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButLeftStickTrigger.Name = "ButLeftStickTrigger";
             this.ButLeftStickTrigger.Size = new System.Drawing.Size(50, 50);
@@ -272,7 +274,7 @@ namespace JoyStick_000
             // 
             // ButLeftStickShoulder
             // 
-            this.ButLeftStickShoulder.Location = new System.Drawing.Point(121, 111);
+            this.ButLeftStickShoulder.Location = new System.Drawing.Point(121, 156);
             this.ButLeftStickShoulder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButLeftStickShoulder.Name = "ButLeftStickShoulder";
             this.ButLeftStickShoulder.Size = new System.Drawing.Size(50, 50);
@@ -284,7 +286,7 @@ namespace JoyStick_000
             // 
             // ButLeftStickLeft
             // 
-            this.ButLeftStickLeft.Location = new System.Drawing.Point(12, 175);
+            this.ButLeftStickLeft.Location = new System.Drawing.Point(12, 220);
             this.ButLeftStickLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButLeftStickLeft.Name = "ButLeftStickLeft";
             this.ButLeftStickLeft.Size = new System.Drawing.Size(50, 50);
@@ -297,7 +299,7 @@ namespace JoyStick_000
             // LabLeftStick
             // 
             this.LabLeftStick.AutoSize = true;
-            this.LabLeftStick.Location = new System.Drawing.Point(8, 76);
+            this.LabLeftStick.Location = new System.Drawing.Point(8, 121);
             this.LabLeftStick.Name = "LabLeftStick";
             this.LabLeftStick.Size = new System.Drawing.Size(59, 12);
             this.LabLeftStick.TabIndex = 24;
@@ -306,7 +308,7 @@ namespace JoyStick_000
             // LabLeftStickClick
             // 
             this.LabLeftStickClick.AutoSize = true;
-            this.LabLeftStickClick.Location = new System.Drawing.Point(75, 164);
+            this.LabLeftStickClick.Location = new System.Drawing.Point(75, 209);
             this.LabLeftStickClick.Name = "LabLeftStickClick";
             this.LabLeftStickClick.Size = new System.Drawing.Size(35, 12);
             this.LabLeftStickClick.TabIndex = 25;
@@ -315,7 +317,7 @@ namespace JoyStick_000
             // LabLeftStickDown
             // 
             this.LabLeftStickDown.AutoSize = true;
-            this.LabLeftStickDown.Location = new System.Drawing.Point(72, 228);
+            this.LabLeftStickDown.Location = new System.Drawing.Point(77, 272);
             this.LabLeftStickDown.Name = "LabLeftStickDown";
             this.LabLeftStickDown.Size = new System.Drawing.Size(29, 12);
             this.LabLeftStickDown.TabIndex = 26;
@@ -324,7 +326,7 @@ namespace JoyStick_000
             // LabLeftStickRight
             // 
             this.LabLeftStickRight.AutoSize = true;
-            this.LabLeftStickRight.Location = new System.Drawing.Point(128, 164);
+            this.LabLeftStickRight.Location = new System.Drawing.Point(128, 209);
             this.LabLeftStickRight.Name = "LabLeftStickRight";
             this.LabLeftStickRight.Size = new System.Drawing.Size(35, 12);
             this.LabLeftStickRight.TabIndex = 27;
@@ -333,7 +335,7 @@ namespace JoyStick_000
             // LabLeftStickLeft
             // 
             this.LabLeftStickLeft.AutoSize = true;
-            this.LabLeftStickLeft.Location = new System.Drawing.Point(20, 164);
+            this.LabLeftStickLeft.Location = new System.Drawing.Point(20, 209);
             this.LabLeftStickLeft.Name = "LabLeftStickLeft";
             this.LabLeftStickLeft.Size = new System.Drawing.Size(29, 12);
             this.LabLeftStickLeft.TabIndex = 28;
@@ -342,7 +344,7 @@ namespace JoyStick_000
             // LabLeftStickTrigger
             // 
             this.LabLeftStickTrigger.AutoSize = true;
-            this.LabLeftStickTrigger.Location = new System.Drawing.Point(10, 97);
+            this.LabLeftStickTrigger.Location = new System.Drawing.Point(15, 142);
             this.LabLeftStickTrigger.Name = "LabLeftStickTrigger";
             this.LabLeftStickTrigger.Size = new System.Drawing.Size(47, 12);
             this.LabLeftStickTrigger.TabIndex = 29;
@@ -351,7 +353,7 @@ namespace JoyStick_000
             // LabLeftStickShoulder
             // 
             this.LabLeftStickShoulder.AutoSize = true;
-            this.LabLeftStickShoulder.Location = new System.Drawing.Point(119, 97);
+            this.LabLeftStickShoulder.Location = new System.Drawing.Point(122, 142);
             this.LabLeftStickShoulder.Name = "LabLeftStickShoulder";
             this.LabLeftStickShoulder.Size = new System.Drawing.Size(53, 12);
             this.LabLeftStickShoulder.TabIndex = 30;
@@ -360,7 +362,7 @@ namespace JoyStick_000
             // LabRightStickShoulder
             // 
             this.LabRightStickShoulder.AutoSize = true;
-            this.LabRightStickShoulder.Location = new System.Drawing.Point(448, 98);
+            this.LabRightStickShoulder.Location = new System.Drawing.Point(338, 142);
             this.LabRightStickShoulder.Name = "LabRightStickShoulder";
             this.LabRightStickShoulder.Size = new System.Drawing.Size(53, 12);
             this.LabRightStickShoulder.TabIndex = 45;
@@ -369,7 +371,7 @@ namespace JoyStick_000
             // LabRightStickTrigger
             // 
             this.LabRightStickTrigger.AutoSize = true;
-            this.LabRightStickTrigger.Location = new System.Drawing.Point(344, 98);
+            this.LabRightStickTrigger.Location = new System.Drawing.Point(453, 141);
             this.LabRightStickTrigger.Name = "LabRightStickTrigger";
             this.LabRightStickTrigger.Size = new System.Drawing.Size(47, 12);
             this.LabRightStickTrigger.TabIndex = 44;
@@ -378,7 +380,7 @@ namespace JoyStick_000
             // LabRightStickLeft
             // 
             this.LabRightStickLeft.AutoSize = true;
-            this.LabRightStickLeft.Location = new System.Drawing.Point(352, 164);
+            this.LabRightStickLeft.Location = new System.Drawing.Point(352, 209);
             this.LabRightStickLeft.Name = "LabRightStickLeft";
             this.LabRightStickLeft.Size = new System.Drawing.Size(29, 12);
             this.LabRightStickLeft.TabIndex = 43;
@@ -387,7 +389,7 @@ namespace JoyStick_000
             // LabRightStickRight
             // 
             this.LabRightStickRight.AutoSize = true;
-            this.LabRightStickRight.Location = new System.Drawing.Point(455, 163);
+            this.LabRightStickRight.Location = new System.Drawing.Point(455, 208);
             this.LabRightStickRight.Name = "LabRightStickRight";
             this.LabRightStickRight.Size = new System.Drawing.Size(35, 12);
             this.LabRightStickRight.TabIndex = 42;
@@ -396,7 +398,7 @@ namespace JoyStick_000
             // LabRightStickDown
             // 
             this.LabRightStickDown.AutoSize = true;
-            this.LabRightStickDown.Location = new System.Drawing.Point(405, 224);
+            this.LabRightStickDown.Location = new System.Drawing.Point(404, 269);
             this.LabRightStickDown.Name = "LabRightStickDown";
             this.LabRightStickDown.Size = new System.Drawing.Size(29, 12);
             this.LabRightStickDown.TabIndex = 41;
@@ -405,7 +407,7 @@ namespace JoyStick_000
             // LabRightStickClick
             // 
             this.LabRightStickClick.AutoSize = true;
-            this.LabRightStickClick.Location = new System.Drawing.Point(402, 164);
+            this.LabRightStickClick.Location = new System.Drawing.Point(402, 209);
             this.LabRightStickClick.Name = "LabRightStickClick";
             this.LabRightStickClick.Size = new System.Drawing.Size(35, 12);
             this.LabRightStickClick.TabIndex = 40;
@@ -414,7 +416,7 @@ namespace JoyStick_000
             // LabRightStick
             // 
             this.LabRightStick.AutoSize = true;
-            this.LabRightStick.Location = new System.Drawing.Point(338, 82);
+            this.LabRightStick.Location = new System.Drawing.Point(338, 127);
             this.LabRightStick.Name = "LabRightStick";
             this.LabRightStick.Size = new System.Drawing.Size(65, 12);
             this.LabRightStick.TabIndex = 39;
@@ -422,7 +424,7 @@ namespace JoyStick_000
             // 
             // ButRightStickLeft
             // 
-            this.ButRightStickLeft.Location = new System.Drawing.Point(340, 175);
+            this.ButRightStickLeft.Location = new System.Drawing.Point(340, 220);
             this.ButRightStickLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButRightStickLeft.Name = "ButRightStickLeft";
             this.ButRightStickLeft.Size = new System.Drawing.Size(50, 50);
@@ -434,7 +436,7 @@ namespace JoyStick_000
             // 
             // ButRightStickShoulder
             // 
-            this.ButRightStickShoulder.Location = new System.Drawing.Point(450, 111);
+            this.ButRightStickShoulder.Location = new System.Drawing.Point(340, 157);
             this.ButRightStickShoulder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButRightStickShoulder.Name = "ButRightStickShoulder";
             this.ButRightStickShoulder.Size = new System.Drawing.Size(50, 50);
@@ -446,7 +448,7 @@ namespace JoyStick_000
             // 
             // ButRightStickTrigger
             // 
-            this.ButRightStickTrigger.Location = new System.Drawing.Point(341, 112);
+            this.ButRightStickTrigger.Location = new System.Drawing.Point(450, 156);
             this.ButRightStickTrigger.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButRightStickTrigger.Name = "ButRightStickTrigger";
             this.ButRightStickTrigger.Size = new System.Drawing.Size(50, 50);
@@ -458,7 +460,7 @@ namespace JoyStick_000
             // 
             // ButRightStickRight
             // 
-            this.ButRightStickRight.Location = new System.Drawing.Point(450, 175);
+            this.ButRightStickRight.Location = new System.Drawing.Point(450, 220);
             this.ButRightStickRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButRightStickRight.Name = "ButRightStickRight";
             this.ButRightStickRight.Size = new System.Drawing.Size(50, 50);
@@ -470,7 +472,7 @@ namespace JoyStick_000
             // 
             // ButRightStickDown
             // 
-            this.ButRightStickDown.Location = new System.Drawing.Point(394, 238);
+            this.ButRightStickDown.Location = new System.Drawing.Point(394, 283);
             this.ButRightStickDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButRightStickDown.Name = "ButRightStickDown";
             this.ButRightStickDown.Size = new System.Drawing.Size(50, 50);
@@ -482,7 +484,7 @@ namespace JoyStick_000
             // 
             // ButRightStickClick
             // 
-            this.ButRightStickClick.Location = new System.Drawing.Point(394, 175);
+            this.ButRightStickClick.Location = new System.Drawing.Point(394, 220);
             this.ButRightStickClick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButRightStickClick.Name = "ButRightStickClick";
             this.ButRightStickClick.Size = new System.Drawing.Size(50, 50);
@@ -495,7 +497,7 @@ namespace JoyStick_000
             // LabRightStickUp
             // 
             this.LabRightStickUp.AutoSize = true;
-            this.LabRightStickUp.Location = new System.Drawing.Point(410, 98);
+            this.LabRightStickUp.Location = new System.Drawing.Point(410, 143);
             this.LabRightStickUp.Name = "LabRightStickUp";
             this.LabRightStickUp.Size = new System.Drawing.Size(17, 12);
             this.LabRightStickUp.TabIndex = 32;
@@ -503,7 +505,7 @@ namespace JoyStick_000
             // 
             // ButRightStickUp
             // 
-            this.ButRightStickUp.Location = new System.Drawing.Point(394, 112);
+            this.ButRightStickUp.Location = new System.Drawing.Point(394, 157);
             this.ButRightStickUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButRightStickUp.Name = "ButRightStickUp";
             this.ButRightStickUp.Size = new System.Drawing.Size(50, 50);
@@ -524,7 +526,7 @@ namespace JoyStick_000
             // 
             // ButDPadUp
             // 
-            this.ButDPadUp.Location = new System.Drawing.Point(232, 111);
+            this.ButDPadUp.Location = new System.Drawing.Point(232, 156);
             this.ButDPadUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButDPadUp.Name = "ButDPadUp";
             this.ButDPadUp.Size = new System.Drawing.Size(50, 50);
@@ -536,7 +538,7 @@ namespace JoyStick_000
             // 
             // ButDPadLeft
             // 
-            this.ButDPadLeft.Location = new System.Drawing.Point(178, 175);
+            this.ButDPadLeft.Location = new System.Drawing.Point(178, 220);
             this.ButDPadLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButDPadLeft.Name = "ButDPadLeft";
             this.ButDPadLeft.Size = new System.Drawing.Size(50, 50);
@@ -548,7 +550,7 @@ namespace JoyStick_000
             // 
             // ButDPadDown
             // 
-            this.ButDPadDown.Location = new System.Drawing.Point(234, 238);
+            this.ButDPadDown.Location = new System.Drawing.Point(234, 283);
             this.ButDPadDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButDPadDown.Name = "ButDPadDown";
             this.ButDPadDown.Size = new System.Drawing.Size(50, 50);
@@ -560,7 +562,7 @@ namespace JoyStick_000
             // 
             // ButDPadRight
             // 
-            this.ButDPadRight.Location = new System.Drawing.Point(284, 175);
+            this.ButDPadRight.Location = new System.Drawing.Point(284, 220);
             this.ButDPadRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButDPadRight.Name = "ButDPadRight";
             this.ButDPadRight.Size = new System.Drawing.Size(50, 50);
@@ -573,7 +575,7 @@ namespace JoyStick_000
             // LabDPad
             // 
             this.LabDPad.AutoSize = true;
-            this.LabDPad.Location = new System.Drawing.Point(185, 82);
+            this.LabDPad.Location = new System.Drawing.Point(185, 127);
             this.LabDPad.Name = "LabDPad";
             this.LabDPad.Size = new System.Drawing.Size(29, 12);
             this.LabDPad.TabIndex = 51;
@@ -582,7 +584,7 @@ namespace JoyStick_000
             // LabDPadUp
             // 
             this.LabDPadUp.AutoSize = true;
-            this.LabDPadUp.Location = new System.Drawing.Point(248, 97);
+            this.LabDPadUp.Location = new System.Drawing.Point(248, 142);
             this.LabDPadUp.Name = "LabDPadUp";
             this.LabDPadUp.Size = new System.Drawing.Size(17, 12);
             this.LabDPadUp.TabIndex = 52;
@@ -591,7 +593,7 @@ namespace JoyStick_000
             // LabDPadRight
             // 
             this.LabDPadRight.AutoSize = true;
-            this.LabDPadRight.Location = new System.Drawing.Point(292, 161);
+            this.LabDPadRight.Location = new System.Drawing.Point(292, 206);
             this.LabDPadRight.Name = "LabDPadRight";
             this.LabDPadRight.Size = new System.Drawing.Size(35, 12);
             this.LabDPadRight.TabIndex = 53;
@@ -600,7 +602,7 @@ namespace JoyStick_000
             // LabDPadDown
             // 
             this.LabDPadDown.AutoSize = true;
-            this.LabDPadDown.Location = new System.Drawing.Point(238, 224);
+            this.LabDPadDown.Location = new System.Drawing.Point(243, 269);
             this.LabDPadDown.Name = "LabDPadDown";
             this.LabDPadDown.Size = new System.Drawing.Size(29, 12);
             this.LabDPadDown.TabIndex = 54;
@@ -609,7 +611,7 @@ namespace JoyStick_000
             // LabDPadLeft
             // 
             this.LabDPadLeft.AutoSize = true;
-            this.LabDPadLeft.Location = new System.Drawing.Point(187, 161);
+            this.LabDPadLeft.Location = new System.Drawing.Point(187, 206);
             this.LabDPadLeft.Name = "LabDPadLeft";
             this.LabDPadLeft.Size = new System.Drawing.Size(29, 12);
             this.LabDPadLeft.TabIndex = 55;
@@ -618,7 +620,7 @@ namespace JoyStick_000
             // LabABXYX
             // 
             this.LabABXYX.AutoSize = true;
-            this.LabABXYX.Location = new System.Drawing.Point(528, 160);
+            this.LabABXYX.Location = new System.Drawing.Point(528, 205);
             this.LabABXYX.Name = "LabABXYX";
             this.LabABXYX.Size = new System.Drawing.Size(11, 12);
             this.LabABXYX.TabIndex = 64;
@@ -627,7 +629,7 @@ namespace JoyStick_000
             // LabABXYB
             // 
             this.LabABXYB.AutoSize = true;
-            this.LabABXYB.Location = new System.Drawing.Point(584, 224);
+            this.LabABXYB.Location = new System.Drawing.Point(642, 206);
             this.LabABXYB.Name = "LabABXYB";
             this.LabABXYB.Size = new System.Drawing.Size(11, 12);
             this.LabABXYB.TabIndex = 63;
@@ -636,7 +638,7 @@ namespace JoyStick_000
             // LabABXYA
             // 
             this.LabABXYA.AutoSize = true;
-            this.LabABXYA.Location = new System.Drawing.Point(642, 163);
+            this.LabABXYA.Location = new System.Drawing.Point(584, 272);
             this.LabABXYA.Name = "LabABXYA";
             this.LabABXYA.Size = new System.Drawing.Size(11, 12);
             this.LabABXYA.TabIndex = 62;
@@ -645,7 +647,7 @@ namespace JoyStick_000
             // LabABXYY
             // 
             this.LabABXYY.AutoSize = true;
-            this.LabABXYY.Location = new System.Drawing.Point(584, 111);
+            this.LabABXYY.Location = new System.Drawing.Point(584, 141);
             this.LabABXYY.Name = "LabABXYY";
             this.LabABXYY.Size = new System.Drawing.Size(11, 12);
             this.LabABXYY.TabIndex = 61;
@@ -654,7 +656,7 @@ namespace JoyStick_000
             // LabABXY
             // 
             this.LabABXY.AutoSize = true;
-            this.LabABXY.Location = new System.Drawing.Point(506, 82);
+            this.LabABXY.Location = new System.Drawing.Point(506, 127);
             this.LabABXY.Name = "LabABXY";
             this.LabABXY.Size = new System.Drawing.Size(29, 12);
             this.LabABXY.TabIndex = 60;
@@ -662,7 +664,7 @@ namespace JoyStick_000
             // 
             // ButABXYA
             // 
-            this.ButABXYA.Location = new System.Drawing.Point(618, 180);
+            this.ButABXYA.Location = new System.Drawing.Point(564, 283);
             this.ButABXYA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButABXYA.Name = "ButABXYA";
             this.ButABXYA.Size = new System.Drawing.Size(50, 50);
@@ -674,7 +676,7 @@ namespace JoyStick_000
             // 
             // ButABXYB
             // 
-            this.ButABXYB.Location = new System.Drawing.Point(564, 238);
+            this.ButABXYB.Location = new System.Drawing.Point(620, 220);
             this.ButABXYB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButABXYB.Name = "ButABXYB";
             this.ButABXYB.Size = new System.Drawing.Size(50, 50);
@@ -686,7 +688,7 @@ namespace JoyStick_000
             // 
             // ButABXYX
             // 
-            this.ButABXYX.Location = new System.Drawing.Point(508, 175);
+            this.ButABXYX.Location = new System.Drawing.Point(508, 220);
             this.ButABXYX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButABXYX.Name = "ButABXYX";
             this.ButABXYX.Size = new System.Drawing.Size(50, 50);
@@ -698,7 +700,7 @@ namespace JoyStick_000
             // 
             // ButABXYY
             // 
-            this.ButABXYY.Location = new System.Drawing.Point(564, 125);
+            this.ButABXYY.Location = new System.Drawing.Point(564, 155);
             this.ButABXYY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButABXYY.Name = "ButABXYY";
             this.ButABXYY.Size = new System.Drawing.Size(50, 50);
@@ -711,7 +713,7 @@ namespace JoyStick_000
             // LabMenu
             // 
             this.LabMenu.AutoSize = true;
-            this.LabMenu.Location = new System.Drawing.Point(8, 291);
+            this.LabMenu.Location = new System.Drawing.Point(10, 329);
             this.LabMenu.Name = "LabMenu";
             this.LabMenu.Size = new System.Drawing.Size(29, 12);
             this.LabMenu.TabIndex = 65;
@@ -719,7 +721,7 @@ namespace JoyStick_000
             // 
             // ButMenuStart
             // 
-            this.ButMenuStart.Location = new System.Drawing.Point(10, 317);
+            this.ButMenuStart.Location = new System.Drawing.Point(12, 355);
             this.ButMenuStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButMenuStart.Name = "ButMenuStart";
             this.ButMenuStart.Size = new System.Drawing.Size(50, 50);
@@ -731,7 +733,7 @@ namespace JoyStick_000
             // 
             // ButMenuBack
             // 
-            this.ButMenuBack.Location = new System.Drawing.Point(68, 317);
+            this.ButMenuBack.Location = new System.Drawing.Point(68, 355);
             this.ButMenuBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButMenuBack.Name = "ButMenuBack";
             this.ButMenuBack.Size = new System.Drawing.Size(50, 50);
@@ -743,7 +745,7 @@ namespace JoyStick_000
             // 
             // ButMenuGuide
             // 
-            this.ButMenuGuide.Location = new System.Drawing.Point(124, 317);
+            this.ButMenuGuide.Location = new System.Drawing.Point(121, 355);
             this.ButMenuGuide.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButMenuGuide.Name = "ButMenuGuide";
             this.ButMenuGuide.Size = new System.Drawing.Size(50, 50);
@@ -756,7 +758,7 @@ namespace JoyStick_000
             // LabMenuStart
             // 
             this.LabMenuStart.AutoSize = true;
-            this.LabMenuStart.Location = new System.Drawing.Point(8, 305);
+            this.LabMenuStart.Location = new System.Drawing.Point(20, 341);
             this.LabMenuStart.Name = "LabMenuStart";
             this.LabMenuStart.Size = new System.Drawing.Size(35, 12);
             this.LabMenuStart.TabIndex = 69;
@@ -765,7 +767,7 @@ namespace JoyStick_000
             // LabMenuBack
             // 
             this.LabMenuBack.AutoSize = true;
-            this.LabMenuBack.Location = new System.Drawing.Point(75, 303);
+            this.LabMenuBack.Location = new System.Drawing.Point(75, 341);
             this.LabMenuBack.Name = "LabMenuBack";
             this.LabMenuBack.Size = new System.Drawing.Size(29, 12);
             this.LabMenuBack.TabIndex = 70;
@@ -774,7 +776,7 @@ namespace JoyStick_000
             // LabMenuGuide
             // 
             this.LabMenuGuide.AutoSize = true;
-            this.LabMenuGuide.Location = new System.Drawing.Point(128, 305);
+            this.LabMenuGuide.Location = new System.Drawing.Point(128, 341);
             this.LabMenuGuide.Name = "LabMenuGuide";
             this.LabMenuGuide.Size = new System.Drawing.Size(35, 12);
             this.LabMenuGuide.TabIndex = 71;
@@ -783,7 +785,7 @@ namespace JoyStick_000
             // CheBoxLeftStickMouse
             // 
             this.CheBoxLeftStickMouse.AutoSize = true;
-            this.CheBoxLeftStickMouse.Location = new System.Drawing.Point(117, 78);
+            this.CheBoxLeftStickMouse.Location = new System.Drawing.Point(117, 123);
             this.CheBoxLeftStickMouse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CheBoxLeftStickMouse.Name = "CheBoxLeftStickMouse";
             this.CheBoxLeftStickMouse.Size = new System.Drawing.Size(54, 16);
@@ -795,7 +797,7 @@ namespace JoyStick_000
             // CheBoxRightStickMouse
             // 
             this.CheBoxRightStickMouse.AutoSize = true;
-            this.CheBoxRightStickMouse.Location = new System.Drawing.Point(446, 78);
+            this.CheBoxRightStickMouse.Location = new System.Drawing.Point(446, 123);
             this.CheBoxRightStickMouse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CheBoxRightStickMouse.Name = "CheBoxRightStickMouse";
             this.CheBoxRightStickMouse.Size = new System.Drawing.Size(54, 16);
@@ -807,7 +809,7 @@ namespace JoyStick_000
             // LabTip
             // 
             this.LabTip.AutoSize = true;
-            this.LabTip.Location = new System.Drawing.Point(183, 355);
+            this.LabTip.Location = new System.Drawing.Point(260, 393);
             this.LabTip.Name = "LabTip";
             this.LabTip.Size = new System.Drawing.Size(485, 12);
             this.LabTip.TabIndex = 74;
@@ -815,7 +817,7 @@ namespace JoyStick_000
             // 
             // ButSave
             // 
-            this.ButSave.Location = new System.Drawing.Point(586, 50);
+            this.ButSave.Location = new System.Drawing.Point(578, 92);
             this.ButSave.Name = "ButSave";
             this.ButSave.Size = new System.Drawing.Size(75, 23);
             this.ButSave.TabIndex = 75;
@@ -826,7 +828,7 @@ namespace JoyStick_000
             // LabName
             // 
             this.LabName.AutoSize = true;
-            this.LabName.Location = new System.Drawing.Point(253, 53);
+            this.LabName.Location = new System.Drawing.Point(12, 77);
             this.LabName.Name = "LabName";
             this.LabName.Size = new System.Drawing.Size(35, 12);
             this.LabName.TabIndex = 78;
@@ -836,14 +838,14 @@ namespace JoyStick_000
             // 
             this.ComboLoad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboLoad.FormattingEnabled = true;
-            this.ComboLoad.Location = new System.Drawing.Point(294, 50);
+            this.ComboLoad.Location = new System.Drawing.Point(12, 92);
             this.ComboLoad.Name = "ComboLoad";
-            this.ComboLoad.Size = new System.Drawing.Size(109, 20);
+            this.ComboLoad.Size = new System.Drawing.Size(145, 20);
             this.ComboLoad.TabIndex = 79;
             // 
             // ButLoad
             // 
-            this.ButLoad.Location = new System.Drawing.Point(667, 51);
+            this.ButLoad.Location = new System.Drawing.Point(244, 90);
             this.ButLoad.Name = "ButLoad";
             this.ButLoad.Size = new System.Drawing.Size(75, 23);
             this.ButLoad.TabIndex = 80;
@@ -854,15 +856,15 @@ namespace JoyStick_000
             // TexName
             // 
             this.TexName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TexName.Location = new System.Drawing.Point(490, 51);
+            this.TexName.Location = new System.Drawing.Point(412, 92);
             this.TexName.Name = "TexName";
-            this.TexName.Size = new System.Drawing.Size(90, 21);
+            this.TexName.Size = new System.Drawing.Size(158, 21);
             this.TexName.TabIndex = 81;
             // 
             // LabRename
             // 
             this.LabRename.AutoSize = true;
-            this.LabRename.Location = new System.Drawing.Point(653, 82);
+            this.LabRename.Location = new System.Drawing.Point(656, 95);
             this.LabRename.Name = "LabRename";
             this.LabRename.Size = new System.Drawing.Size(89, 12);
             this.LabRename.TabIndex = 82;
@@ -871,7 +873,7 @@ namespace JoyStick_000
             // 
             // ButDelete
             // 
-            this.ButDelete.Location = new System.Drawing.Point(409, 50);
+            this.ButDelete.Location = new System.Drawing.Point(328, 90);
             this.ButDelete.Name = "ButDelete";
             this.ButDelete.Size = new System.Drawing.Size(75, 23);
             this.ButDelete.TabIndex = 83;
@@ -879,11 +881,32 @@ namespace JoyStick_000
             this.ButDelete.UseVisualStyleBackColor = true;
             this.ButDelete.Click += new System.EventHandler(this.ButDelete_Click);
             // 
+            // ButNameSave
+            // 
+            this.ButNameSave.Location = new System.Drawing.Point(163, 89);
+            this.ButNameSave.Name = "ButNameSave";
+            this.ButNameSave.Size = new System.Drawing.Size(75, 23);
+            this.ButNameSave.TabIndex = 84;
+            this.ButNameSave.Text = "Save";
+            this.ButNameSave.UseVisualStyleBackColor = true;
+            this.ButNameSave.Click += new System.EventHandler(this.ButNameSave_Click);
+            // 
+            // LabSave
+            // 
+            this.LabSave.AutoSize = true;
+            this.LabSave.Location = new System.Drawing.Point(410, 77);
+            this.LabSave.Name = "LabSave";
+            this.LabSave.Size = new System.Drawing.Size(29, 12);
+            this.LabSave.TabIndex = 85;
+            this.LabSave.Text = "Save";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 376);
+            this.ClientSize = new System.Drawing.Size(748, 410);
+            this.Controls.Add(this.LabSave);
+            this.Controls.Add(this.ButNameSave);
             this.Controls.Add(this.ButDelete);
             this.Controls.Add(this.LabRename);
             this.Controls.Add(this.TexName);
@@ -1048,5 +1071,7 @@ namespace JoyStick_000
         private System.Windows.Forms.TextBox TexName;
         private System.Windows.Forms.Label LabRename;
         private System.Windows.Forms.Button ButDelete;
+        private System.Windows.Forms.Button ButNameSave;
+        private System.Windows.Forms.Label LabSave;
     }
 }
